@@ -1,4 +1,4 @@
-name: JoseF
+name: JoseF CI
 
 on:
   push:
