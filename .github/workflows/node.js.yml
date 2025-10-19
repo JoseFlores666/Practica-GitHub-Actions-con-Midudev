@@ -24,6 +24,8 @@ jobs:
       - run: |
           sed -i 's/"standart"/"standard"/g' package.json
 
-      - run: npm install --legacy-peer-deps
+      - run: npm install --legacy-peer-deps --no-fund --no-audit
+
+      - run: npm run lint
 
       - run: npm run build
